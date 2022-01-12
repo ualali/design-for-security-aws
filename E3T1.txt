@@ -1,0 +1,10 @@
+# Findings
+UnauthorizedAccess:EC2/SSHBruteForce
+
+i-0b84e2fcba760cd85 is performing SSH brute force attacks against 10.192.10.227.
+Brute force attacks are used to gain unauthorized access to your instance by guessing the SSH password
+
+# Research Notes
+Amazon GuardDuty scan continuously the VPC Flow Logs, AWS CloudTrail event logs, and DNS logs.
+GuardDuty found suspicious activity related to this brute force attack by scanning
+and analyzing the VPC Flow Logs.

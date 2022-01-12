@@ -1,0 +1,10 @@
+1. The same IAM role is used on both EC2 instances to access S3 bucket
+   resources, which increases the range of damage for the attack vector
+2. The IAM role has a full access policy attached for S3 bucket resources,
+   which violates the Least Privilege Principle
+3. Security Groups has a 0.0.0.0/0 inbound rule for SSH access, which makes
+   instances vulnerable.
+4. HTTP is configured for the Load Balancer and EC2 instance rules but
+   should be HTTPS for encrypted traffic as they are public facing
+   resources.
+

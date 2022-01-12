@@ -1,0 +1,10 @@
+# Suggestions to prevent SSH brute force attack
+* Update inbound security group rules to allow ssh connections from
+  specific addresses, or not allow it at all.
+* Update sshd_config to disable SSH login with password
+
+# Suggestions to prevent access to sensitive data
+* Update the IAM role policy to allow read only to the free bucket
+* Apply encryption by default to the secret S3 bucket
+
+

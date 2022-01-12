@@ -1,0 +1,4 @@
+1. Move the instance to the Private Subnet, configure routing, and keep the ABL attached to the Public Subnets. Also add a WAF.
+2. Not really. It will only limit the surface attack to the AWS network.
+3. Unfortunately no. Only new objects are encrypted by default.
+4. CloudFormation will overwrite changes and restore resources to its original state.
